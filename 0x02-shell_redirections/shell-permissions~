@@ -1,0 +1,10 @@
+#!/bin/bash
+echo -e "#!/bin/bash\necho "Hello, World"" >>0-hello_world
+echo -e "#!/bin/bash\necho "\"(O^o)'" >>1-confused_smiley
+echo -e "#!/bin/bash\ncat /etc/passwd" >>2-hellofile
+echo -e "#!/bin/bash\ncat /etc/passwd\ncat /etc/hosts" >>3-twofiles
+echo -e "#!/bin/bash\ntail -n 10 /etc/passwd" >>4-lastlines
+echo -e "#!/bin/bash\nhead -n 10 /etc/passwd" >>5-firstlines
+echo -e "#!/bin/bash\nhead -n 3 iacta | tail -n 1" >>6-third_line
+echo -e "#!/bin/bash\ntail -1 iacta >>iacta"  >>9-duplicate_last_line
+echo -e "#!/bin/bash\nrm *.js" >>10-no_more_js
