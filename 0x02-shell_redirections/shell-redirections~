@@ -1,0 +1,6 @@
+#!/bin/bash
+echo -e "#!/bin/bash\ncat /etc/passwd /etc/hosts" >>3-twofiles
+echo -e "#!/bin/bash\ntail -n 10 /etc/passwd" >>4-lastlines
+echo -e "#!/bin/bash\nhead /etc/passwd" >>5-firstlines
+echo -e "#!/bin/bash\nhead -n 3 iacta | tail -n 1" >>6-third_line
+chmod u+x*
