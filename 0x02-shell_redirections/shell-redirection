@@ -1,0 +1,15 @@
+#!/bin/bash
+echo -e "#!/bin/bash\nfind . -name "*.js" -type f -delete" >>10-no_more_js
+echo _e "#!/bin/bash\nfind -mindepth l -type d | wc -l" >>11-directories
+echo -e "#!/bin/bash\nls -t | head" >>12-newest_files
+echo -e "#!/bin/bash\nsort | uniq -u" >>13-unique
+echo -e "#!/bin/bash\ngrep root /etc/passwd" >>14-findthatword
+echo -e "#!/bin/bash\ngrep -c bin /etc/passwd" >>15-countthatword
+echo -e "#!/bin/bash\ngrep -A 3 "root" /etc/passwd" >>16-whatsnext
+echo -e "#!/bin/bash\ngrep -v bin /etc/passwd" >>17-hidethisword
+echo -e "#!/bin/bash\ngrep '^[[:alpha]]' /etc/ssh/sshd_config" >>18-letteronly
+echo -e "#!/bin/bash\ntr Ac Ze" >>19-AZ
+echo -e "#!/bin/bash\ntr -d Cc" >>20-hiago
+echo -e "#!/bin/bash\ncat /etc/passwd | sort" >>22-users_and_homes
+echo -e "#!/bin/bash\nrev" >>21-reverse
+chmod u+x *

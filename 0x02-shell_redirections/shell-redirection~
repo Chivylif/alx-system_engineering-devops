@@ -1,0 +1,8 @@
+#!/bin/bash
+echo -e "#!/bin/bash\nfind . -name "*.js" -type f -delete" >>10-no_more_js
+echo _e "#!/bin/bash\nfind -mindepth l -type d | wc -l" >>11-directories
+echo -e "#!/bin/bash\nls -t | head" >>12-newest_files
+echo -e "#!/bin/bash\nsort | uniq -u" >>13-unique
+echo -e "#!/bin/bash\ngrep root /etc/passwd" >>14-findthatword
+echo -e "#!/bin/bash\ngrep -c bin /etc/passwd" >>15-countthatword
+echo -e "#!/bin/bash\ngrep -A 3 "root" /etc/passwd" >>16-whatsnext
