@@ -1,0 +1,2 @@
+#!/bin/bash
+git add --all && git commit -m "shell expansions" && git push origin master

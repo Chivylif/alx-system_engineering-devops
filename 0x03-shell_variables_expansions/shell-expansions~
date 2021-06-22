@@ -1,0 +1,4 @@
+#!/bin/bash
+echo -e "#!/bin/bash\nalias ls="rm *"" >0-alias
+echo -e "#!/bin/bash\necho hello &USER" >1-hello_you
+echo -e "#!/bin/bash\n"
